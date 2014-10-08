@@ -1,0 +1,11 @@
+get request - google
+post request -
+
+<form action= "/posts" method="POST">
+if you dont give a form an action its going to submit to post/new
+
+
+
+Routes
+
+add vendors user id to session

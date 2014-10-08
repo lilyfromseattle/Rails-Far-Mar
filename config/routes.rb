@@ -5,9 +5,13 @@ Rails.application.routes.draw do
 
    get 'home/index'
 
+
   get  "/products",     to: "products#index"
-  post "/products",     to: "products#create"
+  post "/products/new", to: "products#create"
   get  "/products/new", to: "products#new"
+  get "/products/destroy/:id",  to: "products#destroy"
+
+  root "products#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

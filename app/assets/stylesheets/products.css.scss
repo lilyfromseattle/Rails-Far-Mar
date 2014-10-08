@@ -1,0 +1,32 @@
+body {
+  width: 100%;
+  padding: 0;
+}
+
+header {
+  background : pink;
+  width : 100%;
+  padding: 1%;
+  margin: 0;
+  margin-top: -17;
+}
+
+#navigation li {
+  display :inline-block;
+  // width: 20%;
+  // margin: 10;
+}
+
+
+dropdown-div {
+  display: none;
+  width: 20%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navigation {
+  list-style: none;
+  // padding: 0;
+}

@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-    def index
+  def index
     @products = Product.all
   end
 
@@ -9,14 +9,20 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(params.require(:product).permit(:name))
+    # raise params.inspect
     if @product.save
-      redirect_to root_path
+      redirect_to "/products"
     else
+      redirect_to "/products/new"    
     end
   end
 
   def destroy
-    self.delete
+    # raise params.inspect
+    @product = Product.all.find(params[:id])
+    @product.destroy
+    redirect_to "/products"
+    # @product.destroy
   end
 
 end

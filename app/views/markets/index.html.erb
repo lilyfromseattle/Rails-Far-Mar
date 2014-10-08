@@ -16,7 +16,7 @@
         <td><%= market.address %></td>
         <td><%= link_to 'Show', market %></td>
         <td><%= link_to 'Edit', edit_market_path(market) %></td>
-        <td><%= link_to 'Destroy', market, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to "Delete", @product, :method => :delete, :confirm => "Are you sure ?"%></td>
       </tr>
     <% end %>
   </tbody>
