@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
   resources :markets
-
+  resources :users
   resources :vendors
 
-   get 'home/index'
+
+  post "/", to: "users#create"
+  get "/", to: "users#index" #HP User sign in reference
+
+  # get "/users", to: "users#index"
+  # get "/loginlanding", to: "users#loginlanding"
 
 
   get  "/products",     to: "products#index"
