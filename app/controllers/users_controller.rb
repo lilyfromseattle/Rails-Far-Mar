@@ -19,7 +19,6 @@ class UsersController < ApplicationController
     @users = User.new(params.require(:user).permit(:username))
       if @users.save
         redirect_to "users/loginlanding"
-        #redirect to: 2nd landing page
       else
       end
   end
