@@ -1,13 +1,18 @@
-<h2>Product</h2>
-
+<div class = "view-new">
+<h2 class = "page-title">All Products</h2>
+<div class = "each-do">
 <% @products.each do |product| %>
+    <div class = "all">
     <tr>
-      <td><%= product.name %></td>
-      <td><%= link_to "Destroy", "/products/destroy/#{product.id}" %></td>
+      <td class = "table-data"><a href="#" class = "name"><%= product.name %></a></td>
+      <td><%= link_to "x", "/products/destroy/#{product.id}", class: "destroy" %></td>
     </tr>
+  </div>
     <div class = "product-description">
 
     </div>
   <% end %>
+</div>
 
-<%= link_to "New Product", "/products/new" %>
+<%= link_to "New Product", "/products/new", class: "links" %>
+</div>
