@@ -3,10 +3,13 @@
 <div class = "each-do">
 <% @products.each do |product| %>
     <div class = "all">
-    <tr>
-      <td class = "table-data"><a href="#" class = "name"><%= product.name %></a></td>
-      <td><%= link_to "x", "/products/destroy/#{product.id}", class: "destroy" %></td>
-    </tr>
+      <tr>
+        <td class = "table-data"><a href="#" class = "name"><%= product.name %></a></td>
+        <td><%= link_to "x", "/products/destroy/#{product.id}", class: "destroy" %></td>
+        <td><%= product.name %></td>
+        <td><%= link_to "Destroy", "/products/destroy/#{product.id}" %></td>
+        <!-- <td><%= link_to "Edit", "/products/#{product.id}/edit" %></td> -->
+      </tr>
   </div>
     <div class = "product-description">
 
