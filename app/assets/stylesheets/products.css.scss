@@ -39,17 +39,17 @@ h1 {
   font-family: 'Oswald';
   color:olive;
   font-size: 1.4em;
-  // transition-duration: 1s;
-  // -webkit-duration: 1s;
-  // -moz-duration: 1s;
+  transition-duration: 1s;
+  -webkit-duration: 1s;
+  -moz-duration: 1s;
 }
 
 #navigation li a:hover {
-  text-shadow: 2px 2px 2px black;
-  background: none;
-  // transition-duration: 1s;
-  // -webkit-duration: 1s;
-  // -moz-duration: 1s;
+  // text-shadow: 2px 2px 2px black;
+  color: grey;
+  transition-duration: 1s;
+  -webkit-duration: 1s;
+  -moz-duration: 1s;
 }
 
 #farmarfinder {
