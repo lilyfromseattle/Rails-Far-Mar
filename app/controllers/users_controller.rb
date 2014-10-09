@@ -6,27 +6,44 @@ class UsersController < ApplicationController
   end
 
 #show exsisting users
-
-  def show
-    @users = User.all
-  end
+  #
+  # def show
+  #   @users = User.all
+  # end
 
   def new
     @users = User.new
   end
+
 #New Users
   def create
-    @users = User.new(params.require(:user).permit(:username))
+    puts params.inspect
+    @users = User.new(params.require(:user).permit(:name))
       if @users.save
         redirect_to "/users/ll"
       else
       end
   end
 
+  def login
+    if @users = User.find_by(params[:user][:name])
+      session[:id] = @users.id
+      redirect_to "/users/ll"
+    else
+      redirect_to "/404"
+    end
+  end
+
+
   def destroy
   end
 
   def ll
+    # logger.debug("HELP")
+  end
+
+  def signup
+
   end
 
 end

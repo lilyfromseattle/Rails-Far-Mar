@@ -4,6 +4,8 @@
     <tr>
       <td><%= product.name %></td>
       <td><%= link_to "Destroy", "/products/destroy/#{product.id}" %></td>
+      <td><%= link_to "Edit", "/products/#{product.id}/edit" %></td>
+
     </tr>
     <div class = "product-description">
 

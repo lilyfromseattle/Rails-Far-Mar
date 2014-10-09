@@ -18,8 +18,9 @@ class VendorsController < ApplicationController
   end
 
   # GET /vendors/1/edit
-  def edit
-  end
+  # def edit
+  #   @vendor = Vendor.find(params[:id])
+  # end
 
   # POST /vendors
   # POST /vendors.json

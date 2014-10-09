@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
+  #very end, custom in front.
   resources :markets
-  resources :users
-  resources :vendors
- 
-
-  post "/", to: "users#create"
-  get "/", to: "users#index" #HP User sign in reference
   get "/users/ll", to: "users#ll"
+  # resources :users
+  resources :vendors
+  resources :products
+
+
+  post "/", to: "users#login"
+  get "/", to: "users#index"
+   #HP User sign in reference
+  post "/users/signup", to: "users#signup"
+  get "/users/signup", to: "users#signup"
+
+  # get "/users/ll", to: "users#ll"
 
 
   # get "/users", to: "users#index"
@@ -17,6 +24,8 @@ Rails.application.routes.draw do
   post "/products/new", to: "products#create"
   get  "/products/new", to: "products#new"
   get "/products/destroy/:id",  to: "products#destroy"
+  get "/product/:id/edit", to: "products#edit"
+  put "/product/:id", to: "products#update"
 
   root "products#index"
   # The priority is based upon order of creation: first created -> highest priority.
