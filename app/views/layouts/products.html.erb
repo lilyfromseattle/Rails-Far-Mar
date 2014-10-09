@@ -4,6 +4,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="public/css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
@@ -15,7 +16,7 @@
     <li><a id = "sale-link">Sales</a></li>
   </ul>
 </header>
-
+<div id = "all-dropdowns">
   <div class = "dropdown-div"  id = "market-dropdown">
     <ul class = "dropdown-ul">
       <li><a class = "dropdown-link">All Markets</a></li>
@@ -43,6 +44,7 @@
       <li><a class = "dropdown-link">New Sale</a></li>
     </ul>
   </div>
+</div>
 
 
 

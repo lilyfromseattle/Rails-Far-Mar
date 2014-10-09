@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :users
   resources :vendors
 
-<<<<<<< Updated upstream
 
   post "/", to: "users#create"
   get "/", to: "users#index" #HP User sign in reference
@@ -18,11 +17,6 @@ Rails.application.routes.draw do
   get "/products/destroy/:id",  to: "products#destroy"
 
   root "products#index"
-=======
-  get "/" to:"market#index"
-
-
->>>>>>> Stashed changes
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
