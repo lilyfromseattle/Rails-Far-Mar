@@ -2,10 +2,12 @@ Rails.application.routes.draw do
   resources :markets
   resources :users
   resources :vendors
-
+ 
 
   post "/", to: "users#create"
   get "/", to: "users#index" #HP User sign in reference
+  get "/users/ll", to: "users#ll"
+
 
   # get "/users", to: "users#index"
   # get "/loginlanding", to: "users#loginlanding"

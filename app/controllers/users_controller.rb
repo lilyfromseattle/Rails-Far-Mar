@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 #show exsisting users
 
   def show
-    @users = User.find(params[:id])
+    @users = User.all
   end
 
   def new
@@ -18,22 +18,15 @@ class UsersController < ApplicationController
   def create
     @users = User.new(params.require(:user).permit(:username))
       if @users.save
-        redirect_to "users/loginlanding"
+        redirect_to "/users/ll"
       else
       end
   end
 
   def destroy
-
   end
 
-
-
-
-
-
-
-
-
+  def ll
+  end
 
 end
