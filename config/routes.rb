@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   resources :markets
   get "/users/ll", to: "users#ll"
   get "/users/show", to: "users#show"
+
+  get "/users/new", to: "users#new"
+  post "/users/new", to: "users#create"
+
   # resources :users
   resources :vendors
   resources :products

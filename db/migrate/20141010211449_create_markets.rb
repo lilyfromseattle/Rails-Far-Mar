@@ -1,8 +1,8 @@
 class CreateMarkets < ActiveRecord::Migration
   def change
     create_table :markets do |t|
-      t.string :name
-      t.string :address
+      t.text :market_name
+      t.integer :user_id
 
       t.timestamps
     end
