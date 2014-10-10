@@ -29,7 +29,9 @@ class UsersController < ApplicationController
     if @users = User.find_by(name: params[:user][:name])
       # if @users.save
       session[:id] = @users.id
-        redirect_to "/users/ll"
+      @username = User.find(session[:id]).name
+      @usernames = "Welcome back " + @usernames
+        render "/users/ll"
       else
         redirect_to "/404"
     end
