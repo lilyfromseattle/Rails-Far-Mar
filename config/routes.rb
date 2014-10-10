@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   #very end, custom in front.
   resources :markets
   get "/users/ll", to: "users#ll"
+  get "/users/new", to: "users#new"
+  post "/users/new", to: "users#create"
   # resources :users
   resources :vendors
   resources :products

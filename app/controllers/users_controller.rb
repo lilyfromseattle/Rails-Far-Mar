@@ -18,19 +18,24 @@ class UsersController < ApplicationController
 #New Users
   def create
     puts params.inspect
-    @users = User.new(params.require(:user).permit(:name))
-      if @users.save
+    @user = User.new(params.require(:user).permit(:name, :email))
+      if @user.save
+        session[:id] = @user.id
         redirect_to "/users/ll"
       else
+        render :new
       end
   end
+
+
+
 
   def login
     if @users = User.find_by(name: params[:user][:name])
       # if @users.save
       session[:id] = @users.id
       @username = User.find(session[:id]).name
-      @usernames = "Welcome back " + @usernames
+      @usernames = "Welcome back " + @username
         render "/users/ll"
       else
         redirect_to "/404"

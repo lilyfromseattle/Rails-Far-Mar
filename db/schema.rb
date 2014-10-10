@@ -11,19 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< Updated upstream
-ActiveRecord::Schema.define(version: 20141008203439) do
-=======
-ActiveRecord::Schema.define(version: 0) do
->>>>>>> Stashed changes
+ActiveRecord::Schema.define(version: 20141010211449) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< Updated upstream
   create_table "markets", force: true do |t|
-    t.string   "name"
-    t.string   "address"
+    t.text     "market_name"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -42,13 +37,10 @@ ActiveRecord::Schema.define(version: 0) do
   end
 
   create_table "vendors", force: true do |t|
-    t.string   "vendor_name"
-    t.string   "market_name"
-    t.string   "product"
+    t.text     "vendor_name"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-=======
->>>>>>> Stashed changes
 end
