@@ -31,6 +31,11 @@ class UsersController < ApplicationController
       redirect_to "/users/ll"
     else
       redirect_to "/404"
+      @username = User.find(session[:id]).name
+      @usernames = "Welcome back " + @usernames
+        render "/users/ll"
+      else
+        redirect_to "/404"
     end
   end
 
