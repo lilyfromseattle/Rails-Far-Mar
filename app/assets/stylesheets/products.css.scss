@@ -19,16 +19,17 @@ header {
   margin-bottom: 0;
   // padding-top: 1;
   // padding-left: 3%;
-  height: 130;
+  height: auto;
   // // padding-top: 10;
   // box-shadow: 2px 2px 2px grey;
+  // position: absolute;
 }
 
 h1 {
 
 }
 
-#navigation li {
+.navigation li {
   display: inline-block;
   margin-left: 7%;
   margin-right: 7%;
@@ -36,7 +37,7 @@ h1 {
   padding-bottom: 4px;
 }
 
-#navigation li a {
+.navigation li a {
   font-family: 'Oswald';
   color:olive;
   font-size: 1.4em;
@@ -45,7 +46,7 @@ h1 {
   -moz-duration: 1s;
 }
 
-#navigation li a:hover {
+.navigation li a:hover {
   // text-shadow: 2px 2px 2px black;
   color: grey;
   transition-duration: 1s;
@@ -53,7 +54,7 @@ h1 {
   -moz-duration: 1s;
 }
 
-#farmarfinder {
+.farmarfinder {
   font-size: 2.5em;
   // // margin: 0;
   // margin-bottom: 40;
@@ -87,7 +88,7 @@ h1 {
   list-style: none;
   padding: 1% 2% 1% 2%;
   margin: 2%;
-  margin-top: 0;
+  margin-top: -16;
   text-align: center;
   display: none;
 }
@@ -120,14 +121,14 @@ h1 {
   margin: 0;
 }
 
-#navigation {
+.navigation {
   list-style: none;
   text-align: center;
   // margin-left: -90;
 }
 
-#all-dropdowns {
-  padding-left: 5%;
+.all-dropdowns {
+  padding-left: 12%;
 }
 
 ////////END OF LAYOUT///////////

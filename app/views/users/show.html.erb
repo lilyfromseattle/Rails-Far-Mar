@@ -6,18 +6,18 @@
   <link rel="stylesheet" href="public/css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head> -->
-
+<!--
 <header>
   <%= image_tag "apple3.gif", :class => "apple" %>
-  <h1 id = "farmarfinder">Far Mar Finder</h1>
-  <ul id = "navigation">
+  <h1 class = "farmarfinder">Far Mar Finder</h1>
+  <ul class = "navigation">
     <li><a id = "market-link">Markets</a></li>
     <li><a id = "vendor-link">Vendors</a></li>
     <li><a id = "product-link">Products</a></li>
     <li><a id = "sale-link">Sales</a></li>
   </ul>
 </header>
-<div id = "all-dropdowns">
+<div class = "all-dropdowns">
   <div class = "dropdown-div"  id = "market-dropdown">
     <ul class = "dropdown-ul">
       <li><a class = "dropdown-link">All Markets</a></li>
@@ -45,10 +45,10 @@
       <li><a class = "dropdown-link">New Sale</a></li>
     </ul>
   </div>
-</div>
+</div> -->
 <body>
 <div class = "view-new">
-<h1 id = "welcome-back" class= "page-title"><%= @current %></h1>
+<h1 id = "welcome-back" class= "page-title"><%= @usernames %></h1>
 
 <h1 class = "day"><%= Date.today.strftime('%a'+ 'day') %></h1>
 <h1 class = "time"><%= Time.now.strftime("{ %H:%M }") %></h1>

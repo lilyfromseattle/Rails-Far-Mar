@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
   <title>RailsFarMar</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -8,9 +6,52 @@
   <link rel="stylesheet" href="public/css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
+
+<% if session[:id] %>
+  <header>
+    <%= image_tag "apple3.gif", :class => "apple" %>
+    <h1 class = "farmarfinder">Far Mar Finder</h1>
+    <ul class = "navigation">
+      <li><a id = "market-link">Markets</a></li>
+      <li><a id = "vendor-link">Vendors</a></li>
+      <li><a id = "product-link">Products</a></li>
+      <li><a id = "sale-link">Sales</a></li>
+    </ul>
+  </header>
+  <div class = "all-dropdowns">
+    <div class = "dropdown-div"  id = "market-dropdown">
+      <ul class = "dropdown-ul">
+        <li><a class = "dropdown-link">All Markets</a></li>
+        <li><a class = "dropdown-link">New Market</a></li>
+      </ul>
+    </div>
+
+    <div class = "dropdown-div" id = "vendor-dropdown">
+      <ul class = "dropdown-ul">
+        <li><a class = "dropdown-link">All Vendors</a></li>
+        <li><a class = "dropdown-link">New Vendor</a></li>
+      </ul>
+    </div>
+
+    <div class = "dropdown-div" id = "product-dropdown">
+      <ul class = "dropdown-ul">
+        <li><a class = "dropdown-link">All Products</a></li>
+        <li><a class = "dropdown-link">New Product</a></li>
+      </ul>
+    </div>
+
+    <div class = "dropdown-div" id = "sale-dropdown">
+      <ul class = "dropdown-ul">
+        <li><a class = "dropdown-link">All Sales</a></li>
+        <li><a class = "dropdown-link">New Sale</a></li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+
 <body>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
-</html>
