@@ -34,6 +34,14 @@ Rails.application.routes.draw do
   put "/product/:id", to: "products#update"
 
   root "products#index"
+
+  get  "/vendors",     to: "vendors#index"
+  post "/vendors/new", to: "vendors#create"
+  get  "/vendors/new", to: "vendors#new"
+  get "/vendors/destroy/:id",  to: "vendors#destroy"
+  get "/vendor/:id/edit", to: "vendors#edit"
+  put "/vendor/:id", to: "vendors#update"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

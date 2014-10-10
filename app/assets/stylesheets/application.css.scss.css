@@ -1,0 +1,244 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+  background-image: url(image_path('eggplant.jpg'));
+  // background-size: 150%;
+  background-size: 100%;
+}
+
+///////////LAYOUT/////////
+header {
+  font-family: 'Oswald';
+  color: white;
+  // background-image: url(image_path('peppers.jpg'));
+  // background-size: 150%;
+  // background-image: image-url (peaches.jpg);
+  background: white;
+  width: 100%;
+  margin-bottom: 0;
+  // padding-top: 1;
+  // padding-left: 3%;
+  height: auto;
+  // // padding-top: 10;
+  // box-shadow: 2px 2px 2px grey;
+  // position: absolute;
+}
+
+h1 {
+
+}
+
+.navigation li {
+  display: inline-block;
+  margin-left: 7%;
+  margin-right: 7%;
+  // margin-top: 0;
+  padding-bottom: 4px;
+}
+
+.navigation li a {
+  font-family: 'Oswald';
+  color:olive;
+  font-size: 1.4em;
+  transition-duration: 1s;
+  -webkit-duration: 1s;
+  -moz-duration: 1s;
+}
+
+.navigation li a:hover {
+  // text-shadow: 2px 2px 2px black;
+  color: grey;
+  transition-duration: 1s;
+  -webkit-duration: 1s;
+  -moz-duration: 1s;
+}
+
+.farmarfinder {
+  font-size: 2.5em;
+  // // margin: 0;
+  // margin-bottom: 40;
+  margin-top: 40;
+  // text-shadow: 2px 2px 5px 525252;
+  text-shadow: 2px 2px 5px black;
+  // margin-left: 40;
+  display: inline-block;
+
+  // margin-bottom: -10;
+  // padding: 0;
+  // top: 0;
+}
+
+.apple {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  margin: 0 15 0 15;
+  // -webkit-filter: drop-shadow(2px 2px 5px #222);
+  // filter:         drop-shadow(2px 2px 5px #222);
+  // -webkit-filter: drop-shadow(1px 1px 6px olive);
+  // filter:         drop-shadow(1px 1px 6px olive);
+}
+
+
+.dropdown-div {
+  background: beige;
+  // display: inline-block;
+  width: 15%;
+  list-style: none;
+  padding: 1% 2% 1% 2%;
+  margin: 2%;
+  margin-top: -16;
+  text-align: center;
+  display: none;
+}
+
+.dropdown-ul li a {
+  color: olive;
+  font-size: 1.2em;
+  font-family: 'Oswald';
+  transition-duration: 1s;
+  -webkit-duration: 1s;
+  -moz-duration: 1s;
+}
+
+.dropdown-ul li a:hover {
+  background: none;
+  color: black;
+  transition-duration: 1s;
+  -webkit-duration: 1s;
+  -moz-duration: 1s;
+}
+
+.dropdown-ul li a {
+  margin-top: 2.5;
+  margin-bottom: 2.5;
+}
+
+.dropdown-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  // margin-left: -90;
+}
+
+.all-dropdowns {
+  padding-left: 12%;
+}
+
+////////END OF LAYOUT///////////
+
+
+/////////INDEX////////////////
+
+.view-all {
+  // width: 100%;
+  background-color: rgba(255,255,255,.6);
+  height: auto;
+  text-align: center;
+
+}
+
+.view-new {
+  // width: 100%;
+  background-color: rgba(255,255,255,.7);
+  height: auto;
+  text-align: center;
+  padding: 3%;
+  font-size: 1em;
+}
+
+.submit-button {
+  background: olive;
+  color: white;
+  border: none;
+  border-radius: 15;
+  font-size: 1.2em;
+  font-family: 'Oswald';
+
+
+}
+
+.page-title {
+  font-family: 'Oswald';
+  color: black;
+  font-size: 2.5em;
+  // text-shadow: 1px 1px 2px black;
+}
+
+.links {
+  color: red;
+  text-decoration: none;
+  background: olive;
+  color: white;
+  border: none;
+  border-radius: 15;
+  font-size: 1.2em;
+  font-family: 'Oswald';
+  padding: 3;
+  margin: 100;
+  // margin-top: -100;
+}
+
+.each-do {
+  margin: 2%;
+  padding: 2%;
+  // font-size: 1.2em;
+}
+
+.destroy {
+  background: olive;
+  color: white;
+  border: none;
+  border-radius: 30;
+  font-size: 1.2em;
+  // font-family: 'Oswald';
+  text-decoration: none;
+  padding: 0 6 2 6;
+  font-size: 1em;
+}
+
+.table-data {
+  font-size: 1.2em;
+  font-family: 'Oswald';
+
+}
+
+.all {
+  padding: 5;
+}
+
+.name {
+  font-size: 1.6em;
+  margin-top: 20;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.new-label {
+  font-family: 'Oswald';
+  font-size: 1.2em;
+}

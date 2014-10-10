@@ -1,44 +1,42 @@
 class MarketsController < ApplicationController
-  before_action :set_market, only: [:show, :edit, :update, :destroy]
-
-
   def index
-    @markets = Market.all
-  end
-
-
-  def show
-    
+    @vendors = Vendor.all
   end
 
   def new
-    @market = Market.new
+    @vendor = Vendor.new
   end
 
-
   def edit
+    @vendor = Vendor.find(params[:id])
+  end
+
+  def update
+    # @product = Product.find(params[:id])
+    #   if @post.update(params.require[:product].permit(:name))
+    #     redirect_to root_path
+    #   else
+    #     render :edit
+    #   end
   end
 
 
   def create
-  end
-
-
-  def update
+    @vendor = Vendor.new(params.require(:vendor).permit(:name))
+    # raise params.inspect
+    if @vendor.save
+      redirect_to "/vendors"
+    else
+      redirect_to "/vendors/new"
+    end
   end
 
   def destroy
-
+    # raise params.inspect
+    @vendor = Vendor.all.find(params[:id])
+    @vendor.destroy
+    redirect_to "/vendors"
+    # @vendor.destroy
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_market
-      @market = Market.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def market_params
-      params.require(:market).permit(:name, :address)
-    end
 end

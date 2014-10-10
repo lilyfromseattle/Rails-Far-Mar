@@ -1,42 +1,42 @@
 class VendorsController < ApplicationController
-  before_action :set_vendor, only: [:show, :edit, :update, :destroy]
-
   def index
     @vendors = Vendor.all
-  end
-
-
-  def show
   end
 
   def new
     @vendor = Vendor.new
   end
 
-
-  def create
-
+  def edit
+    @vendor = Vendor.find(params[:id])
   end
-
 
   def update
-
+    # @product = Product.find(params[:id])
+    #   if @post.update(params.require[:product].permit(:name))
+    #     redirect_to root_path
+    #   else
+    #     render :edit
+    #   end
   end
 
-  # DELETE /vendors/1
-  # DELETE /vendors/1.json
+
+  def create
+    @vendor = Vendor.new(params.require(:vendor).permit(:name))
+    # raise params.inspect
+    if @vendor.save
+      redirect_to "/vendors"
+    else
+      redirect_to "/vendors/new"
+    end
+  end
+
   def destroy
-
+    # raise params.inspect
+    @vendor = Vendor.all.find(params[:id])
+    @vendor.destroy
+    redirect_to "/vendors"
+    # @vendor.destroy
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_vendor
-      @vendor = Vendor.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def vendor_params
-      params.require(:vendor).permit(:vendor_name, :market_name, :product)
-    end
 end
