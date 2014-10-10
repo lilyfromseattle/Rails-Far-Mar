@@ -14,6 +14,7 @@ Rails.application.routes.draw do
    #HP User sign in reference
   post "/users/signup", to: "users#create"
   get "/users/signup", to: "users#create"
+  get "/users/show", to: "users#show"
 
   # get "/users/ll", to: "users#ll"
 

@@ -1,0 +1,198 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+  background-image: url(image_path('eggplant.jpg'));
+  background-size: 150%;
+  top: 0;
+}
+
+#user-sign-in {
+  /*margin-top: 10%;*/
+  background-color: rgba(255,255,255,.7);
+  height: auto;
+  text-align: center;
+  padding: 3%;
+  font-size: 1em;
+}
+
+#welcome {
+  color: white;
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 4em;
+  margin: 10%;
+}
+
+.submit-button {
+  background: olive;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2em;
+  font-family: 'Oswald';
+
+}
+
+.page-title {
+  font-family: 'Oswald';
+  color: black;
+  font-size: 2.5em;
+}
+
+.form-label {
+  font-size: 1.2em;
+  font-family: 'Oswald';
+}
+
+// .apple {
+//   height: 70px;
+// }
+//
+// header {
+//   font-family: 'Oswald';
+//   color: white;
+//   background: white;
+//   width: 100%;
+//   margin-bottom: 0;
+//   height: 130;
+//   padding-left: 17px;
+//   // padding-right: 10px;
+//   padding-top: 17px;
+// }
+//
+//
+// #navigation li {
+//   display: inline-block;
+//   margin-left: 7%;
+//   margin-right: 7%;
+// }
+//
+// #navigation li a {
+//   font-family: 'Oswald';
+//   color:olive;
+//   font-size: 1.4em;
+//   transition-duration: 1s;
+//   -webkit-duration: 1s;
+//   -moz-duration: 1s;
+// }
+//
+// #navigation li a:hover {
+//   color: grey;
+//   transition-duration: 1s;
+//   -webkit-duration: 1s;
+//   -moz-duration: 1s;
+// }
+//
+// #farmarfinder {
+//   font-size: 2.5em;
+//   // margin-top: 0px;
+//   text-shadow: 2px 2px 5px black;
+//   display: inline-block;
+//   padding-top: 0;
+//   margin-left: 13px;
+//
+// }
+//
+// .apple {
+//   // margin-top: 6px;
+//   width: 70px;
+//   height: 70px;
+//   display: inline-block;
+//   margin: 0 15 0 15;
+//   // padding: 1%;
+//   // margin-top: 0px;
+// }
+//
+//
+//
+// .dropdown-div {
+//   background: beige;
+//   width: 15%;
+//   list-style: none;
+//   padding: 1% 2% 1% 2%;
+//   margin: 2%;
+//   margin-top: 0;
+//   text-align: center;
+//   display: inline-block;
+// }
+//
+// .dropdown-ul li a {
+//   color: olive;
+//   font-size: 1.2em;
+//   font-family: 'Oswald';
+//   transition-duration: 1s;
+//   -webkit-duration: 1s;
+//   -moz-duration: 1s;
+// }
+//
+// .dropdown-ul li a:hover {
+//   background: none;
+//   color: black;
+//   transition-duration: 1s;
+//   -webkit-duration: 1s;
+//   -moz-duration: 1s;
+// }
+//
+// .dropdown-ul li a {
+//   margin-top: 2.5;
+//   margin-bottom: 2.5;
+// }
+//
+// .dropdown-ul {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
+//
+// #navigation {
+//   list-style: none;
+//   text-align: center;
+//
+// }
+//
+// #all-dropdowns {
+//   padding-left: 5%;
+// }
+//
+// #welcome-back {
+//   color: black;
+//   text-align: center;
+//   font-size:3em;
+//   margin-top: 10%;
+//   margin-bottom: 10%;
+// }
+//
+// .date {
+//   font-family: 'Oswald';
+//   color: black;
+//   font-size: 1.7em;
+//   margin-top: 8%;
+//   margin-bottom: 8%;
+// }
+//
+// .day {
+//   font-family: 'Oswald';
+//   color: black;
+//   font-size: 2em;
+//   margin-top: 8%;
+//   margin-bottom: 8%;
+// }
+//
+// .time {
+//   font-family: 'Oswald';
+//   color: black;
+//   font-size: 2.5em;
+//   margin-top: 8%;
+//   margin-bottom: 8%;
+// }
+
+// .view-new {
+//   // width: 100%;
+//   background-color: rgba(255,255,255,.7);
+//   height: auto;
+//   text-align: center;
+//   padding: 3%;
+//   font-size: 1em;
+// }

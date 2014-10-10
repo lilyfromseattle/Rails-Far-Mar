@@ -31,7 +31,7 @@ class UsersController < ApplicationController
 
 
   def login
-    if @users = User.find_by(name: params[:user][:name])
+    if @users = User.find_by(params[:user][:name])
       # if @users.save
       session[:id] = @users.id
       @username = User.find(session[:id]).name
@@ -50,5 +50,8 @@ class UsersController < ApplicationController
     # logger.debug("HELP")
   end
 
+  def signup
+
+  end
 
 end
