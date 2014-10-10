@@ -26,12 +26,11 @@ class UsersController < ApplicationController
   end
 
   def login
-    if @users = User.find_by(name: params[:user][:name])
-      # if @users.save
+    if @users = User.find_by(params[:user][:name])
       session[:id] = @users.id
-        redirect_to "/users/ll"
-      else
-        redirect_to "/404"
+      redirect_to "/users/ll"
+    else
+      redirect_to "/404"
     end
   end
 
@@ -43,5 +42,8 @@ class UsersController < ApplicationController
     # logger.debug("HELP")
   end
 
+  def signup
+
+  end
 
 end
