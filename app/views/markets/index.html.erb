@@ -1,0 +1,18 @@
+<div class = "view-new">
+<h2 class = "page-title">All Markets</h2>
+<div class = "each-do">
+<% @markets.each do |markets| %>
+    <div class = "all">
+      <tr>
+        <td class = "table-data"><a href="#" class = "name"><%= markets.market_name %></a></td>
+        <td><%= link_to "x", "/markets/destroy/#{markets.id}", class: "destroy" %></td>
+      </tr>
+  </div>
+    <div class = "product-description">
+
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New Market", "/markets/new", class: "links" %>
+</div>

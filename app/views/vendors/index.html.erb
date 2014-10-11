@@ -4,14 +4,12 @@
 <% @vendors.each do |vendors| %>
     <div class = "all">
       <tr>
-        <td class = "table-data"><a href="#" class = "name"><%= vendor.name %></a></td>
+        <td class = "table-data"><a href="#" class = "name"><%= vendors.vendor_name %></a></td>
         <td><%= link_to "x", "/vendors/destroy/#{vendors.id}", class: "destroy" %></td>
-        <!-- <td><%= product.name %></td> -->
-        <!-- <td><%= link_to "Destroy", "/products/destroy/#{product.id}" %></td> -->
-        <!-- <td><%= link_to "Edit", "/products/#{product.id}/edit" %></td> -->
+      
       </tr>
   </div>
-    <div class = "product-description">
+    <div class = "vendor-description">
 
     </div>
   <% end %>

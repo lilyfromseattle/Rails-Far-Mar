@@ -1,14 +1,14 @@
 class MarketsController < ApplicationController
   def index
-    @vendors = Vendor.all
+    @markets = Market.all
   end
 
   def new
-    @vendor = Vendor.new
+    @market = Market.new
   end
 
   def edit
-    @vendor = Vendor.find(params[:id])
+    @market = Market.find(params[:id])
   end
 
   def update
@@ -22,21 +22,21 @@ class MarketsController < ApplicationController
 
 
   def create
-    @vendor = Vendor.new(params.require(:vendor).permit(:name))
+    @market = Market.new(params.require(:market).permit(:market_name))
     # raise params.inspect
-    if @vendor.save
-      redirect_to "/vendors"
+    if @market.save
+      redirect_to "/markets"
     else
-      redirect_to "/vendors/new"
+      redirect_to "/markets/new"
     end
   end
 
   def destroy
     # raise params.inspect
-    @vendor = Vendor.all.find(params[:id])
-    @vendor.destroy
-    redirect_to "/vendors"
-    # @vendor.destroy
+    @market = Market.all.find(params[:id])
+    @market.destroy
+    redirect_to "/markets"
+    # @market.destroy
   end
 
 end

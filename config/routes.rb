@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   #very end, custom in front.
-  resources :markets
+  # resources :markets
   get "/users/ll", to: "users#ll"
   get "/users/show", to: "users#show"
 
@@ -41,6 +41,13 @@ Rails.application.routes.draw do
   get "/vendors/destroy/:id",  to: "vendors#destroy"
   get "/vendor/:id/edit", to: "vendors#edit"
   put "/vendor/:id", to: "vendors#update"
+
+  get  "/markets",     to: "markets#index"
+  post "/markets/new", to: "markets#create"
+  get  "/markets/new", to: "markets#new"
+  get "/markets/destroy/:id",  to: "markets#destroy"
+  get "/market/:id/edit", to: "markets#edit"
+  put "/market/:id", to: "markets#update"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

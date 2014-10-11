@@ -22,7 +22,7 @@ class VendorsController < ApplicationController
 
 
   def create
-    @vendor = Vendor.new(params.require(:vendor).permit(:name))
+    @vendor = Vendor.new(params.require(:vendor).permit(:vendor_name))
     # raise params.inspect
     if @vendor.save
       redirect_to "/vendors"

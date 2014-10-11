@@ -20,26 +20,23 @@ body {
   margin: 0;
   line-height: 18px;
   background-image: url(image_path('eggplant.jpg'));
-  // background-size: 150%;
+  /*background-size: 150%;*/
   background-size: 100%;
 }
 
-///////////LAYOUT/////////
+/*///////////LAYOUT/////////*/
 header {
   font-family: 'Oswald';
   color: white;
-  // background-image: url(image_path('peppers.jpg'));
-  // background-size: 150%;
-  // background-image: image-url (peaches.jpg);
   background: white;
   width: 100%;
   margin-bottom: 0;
-  // padding-top: 1;
-  // padding-left: 3%;
+  /*// padding-top: 1;
+  // padding-left: 3%;*/
   height: auto;
-  // // padding-top: 10;
+  /*// // padding-top: 10;
   // box-shadow: 2px 2px 2px grey;
-  // position: absolute;
+  // position: absolute;*/
 }
 
 h1 {
@@ -65,7 +62,7 @@ h1 {
 
 .navigation li a:hover {
   // text-shadow: 2px 2px 2px black;
-  color: grey;
+  color: black;
   transition-duration: 1s;
   -webkit-duration: 1s;
   -moz-duration: 1s;
@@ -73,17 +70,17 @@ h1 {
 
 .farmarfinder {
   font-size: 2.5em;
-  // // margin: 0;
-  // margin-bottom: 40;
+  /*// // margin: 0;
+  // margin-bottom: 40;*/
   margin-top: 40;
-  // text-shadow: 2px 2px 5px 525252;
+  /*// text-shadow: 2px 2px 5px 525252;*/
   text-shadow: 2px 2px 5px black;
-  // margin-left: 40;
+  /*// margin-left: 40;*/
   display: inline-block;
 
-  // margin-bottom: -10;
+  /*// margin-bottom: -10;
   // padding: 0;
-  // top: 0;
+  // top: 0;*/
 }
 
 .apple {
@@ -91,16 +88,16 @@ h1 {
   height: 70px;
   display: inline-block;
   margin: 0 15 0 15;
-  // -webkit-filter: drop-shadow(2px 2px 5px #222);
+  /*// -webkit-filter: drop-shadow(2px 2px 5px #222);
   // filter:         drop-shadow(2px 2px 5px #222);
   // -webkit-filter: drop-shadow(1px 1px 6px olive);
-  // filter:         drop-shadow(1px 1px 6px olive);
+  // filter:         drop-shadow(1px 1px 6px olive);*/
 }
 
 
 .dropdown-div {
   background: beige;
-  // display: inline-block;
+  /*// display: inline-block;*/
   width: 15%;
   list-style: none;
   padding: 1% 2% 1% 2%;
@@ -141,7 +138,7 @@ h1 {
 .navigation {
   list-style: none;
   text-align: center;
-  // margin-left: -90;
+  /*// margin-left: -90;*/
 }
 
 .all-dropdowns {
@@ -154,7 +151,7 @@ h1 {
 /////////INDEX////////////////
 
 .view-all {
-  // width: 100%;
+  /*// width: 100%;*/
   background-color: rgba(255,255,255,.6);
   height: auto;
   text-align: center;
@@ -162,7 +159,7 @@ h1 {
 }
 
 .view-new {
-  // width: 100%;
+  /*// width: 100%;*/
   background-color: rgba(255,255,255,.7);
   height: auto;
   text-align: center;
@@ -185,7 +182,7 @@ h1 {
   font-family: 'Oswald';
   color: black;
   font-size: 2.5em;
-  // text-shadow: 1px 1px 2px black;
+  /*// text-shadow: 1px 1px 2px black;*/
 }
 
 .links {
@@ -199,13 +196,14 @@ h1 {
   font-family: 'Oswald';
   padding: 3;
   margin: 100;
-  // margin-top: -100;
+  /*// margin-top: -100;*/
 }
 
 .each-do {
   margin: 2%;
   padding: 2%;
-  // font-size: 1.2em;
+  /*// font-size: 1.2em;*/
+  font-family: arial;
 }
 
 .destroy {
@@ -214,7 +212,7 @@ h1 {
   border: none;
   border-radius: 30;
   font-size: 1.2em;
-  // font-family: 'Oswald';
+  /*// font-family: 'Oswald';*/
   text-decoration: none;
   padding: 0 6 2 6;
   font-size: 1em;
@@ -224,6 +222,10 @@ h1 {
   font-size: 1.2em;
   font-family: 'Oswald';
 
+}
+
+ul li a {
+  text-decoration: none;
 }
 
 .all {
@@ -241,4 +243,16 @@ h1 {
 .new-label {
   font-family: 'Oswald';
   font-size: 1.2em;
+}
+
+.links {
+  padding: 5px;
+}
+
+.links:hover {
+  background: black;
+}
+
+.submit-button:hover {
+  background: black;
 }
