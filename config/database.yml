@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: rails-far-mar_production
-  username: rails-far-mar
+  
   password: <%= ENV['RAILS-FAR-MAR_DATABASE_PASSWORD'] %>
