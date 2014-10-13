@@ -1,4 +1,4 @@
-<h1>HELLO THERE.  <%=  @usernames %></h1>
+<!-- <h1>HELLO THERE.  <%=  @usernames %></h1>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,8 +15,18 @@
         <a href = "/products"> Products.</a>
         </p></div></a>
 
-  <!-- <%= yield %> -->
-</div>
+  <! <%= yield %> -->
+<!-- </div>
 </body>
 
-</html>
+</html> -->
+
+<body>
+<div class = "view-new">
+<h1 id = "welcome-back" class= "page-title"><%= @usernames %></h1>
+
+<h1 class = "day"><%= Date.today.strftime('%a'+ 'day') %></h1>
+<h1 class = "time"><%= Time.now.strftime("{ %H:%M }") %></h1>
+<h1 class = "date"><%= Date.today.strftime('%b %d, %Y') %></h1>
+</div>
+</body>

@@ -256,3 +256,15 @@ ul li a {
 .submit-button:hover {
   background: black;
 }
+
+.new-user {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 30;
+  font-size: 1.2em;
+  font-family: 'Oswald';
+  text-decoration: none;
+  padding: 0 6 2 6;
+  font-size: 1em;
+}
